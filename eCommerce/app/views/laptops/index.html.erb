@@ -1,0 +1,13 @@
+<h1> LAPTOPS </h1>
+<% @laptops.each do |laptop| %>
+	<div>
+		<%= laptop.Brand %>
+			<%= link_to 'Show', laptop_path(laptop)%>
+			<%= link_to 'Edit', edit_laptop_path(laptop) %>
+			<%= link_to 'Destroy', laptop_path(laptop), method: :delete, data: { confirm: 'Hey! Take care, are you sure that you want delete me?' } %>
+	</div>
+<% end %>
+
+<p>
+	<%= link_to 'New Laptop', new_laptop_path %>
+<p>

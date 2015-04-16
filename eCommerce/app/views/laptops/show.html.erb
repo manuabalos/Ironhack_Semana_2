@@ -1,0 +1,32 @@
+<h1> LAPTOPS SHOW</h1>
+
+<h3>
+	<strong>
+		<p>-----------------------------</p>
+		Brand:
+		<%= @laptop.Brand %>
+		<p>-----------------------------</p>
+	</strong>
+</h3>
+
+<p>
+	<strong>Model:</strong>
+	<%= @laptop.Model %>
+</p>
+
+<p>
+	<strong>Processor Brand:</strong>
+	<%= @laptop.Processor %>
+</p>
+
+<p>
+	<strong>RAM Size (in Gb):</strong>
+	<%= @laptop.RAM %>
+</p>
+
+<p>
+	<strong>Price:</strong>
+	<%= @laptop.Price %>
+</p>
+<%= link_to 'Edit', edit_laptop_path(@laptop) %>
+<%= link_to 'Back', laptops_path %>
