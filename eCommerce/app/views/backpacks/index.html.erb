@@ -1,0 +1,14 @@
+<h1> BACKPACKS </h1>
+<% @backpacks.each do |backpack| %>
+	<div>
+		Model <%= backpack.Color %>
+			<%= link_to 'Show', backpack_path(backpack) %>
+			<%= link_to 'Edit', edit_backpack_path(backpack) %>
+			<%= link_to 'Destroy', backpack_path(backpack), method: :delete, data: { confirm: 'Hey! take care, are you sure that you want delete me?' } %>
+	</div>
+<% end %>
+	
+	<p>
+		<%= link_to 'New backpack', new_backpack_path %>
+		<%= link_to 'Back to Home', root_path %>
+	</p>

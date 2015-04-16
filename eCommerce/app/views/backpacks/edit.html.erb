@@ -1,0 +1,22 @@
+<h1>EDIT BACKPACK</h1>
+<%= form_for :backpack, url: backpack_path(@backpack), method: :patch do |f| %>
+<p>
+	<%= f.label :Color %><br>
+	<%= f.text_field :Color %>
+</p>
+<p>
+	<%= f.label :Capacity %> (in liters)<br>
+	<%= f.text_field :Capacity %>
+</p>
+<p>
+	<%= f.label :Pockets %><br>
+	<%= f.text_field :Pockets %>
+</p>
+<p>
+	<%= f.label :Waterproof %><br>
+	<%= f.text_field :Waterproof %>
+</p>
+
+	<%= f.submit %>
+	<%= link_to 'Back', backpack_path %>
+<% end %>
